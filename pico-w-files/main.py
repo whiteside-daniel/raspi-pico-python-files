@@ -1,3 +1,6 @@
+#WIFI SETUP
+ssid = 'ssid'
+wifiPw = 'pw'
 from machine import Pin, I2C
 from utime import sleep, sleep_ms
 import ssd1306
@@ -22,9 +25,6 @@ display.poweron()
 # Print out any addresses found
 #devices = hex(i2c.scan()[0]).upper()
 #print(devices)
-#WIFI SETUP
-ssid = 'Peaceful'
-wifiPw = 'Relaxhere'
 wlan = network.WLAN(network.STA_IF)
 wlan.active(True)
 def connect():
